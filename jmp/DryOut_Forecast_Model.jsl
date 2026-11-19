@@ -1,0 +1,90 @@
+//!
+/*  DryOut Shield – demand forecasting model in JMP (Student Edition 19 / JMP Pro)
+    ---------------------------------------------------------------------------
+    Platform : Analyze > Specialized Modeling > Time Series Forecast
+               (automatic exponential-smoothing / ETS state-space models;
+                JMP fits the recommended set of error-trend-season models per
+                series and keeps the one with the lowest AIC)
+    Series   : 60 = 30 outlets x {MS, HSD}, daily, 1 Apr 2023 – 31 Oct 2026
+    Y        : demand_kL (sales, with dry-out days corrected – see prepare_jmp_input.py)
+    Season   : 7 days (weekly pattern; JMP's own time-pattern analysis also suggests 7)
+
+    Step 1  VALIDATION  fit on Train (to 5 Sep 2026), forecast the 56-day Holdout
+    Step 2  PRODUCTION  fit on all data, forecast 1–28 Nov 2026 with 95% intervals
+
+    Outputs (jmp/out/):
+      validation_forecasts.csv, production_forecasts.csv   forecasts + 95% limits
+      validation_models.txt, production_models.txt           JMP report text per series
+      chart_<series>.png                                      forecast charts for the report
+      DryOut_model_input.jmp                                  data table with this model saved as a table script
+*/
+Names Default To Here( 1 );
+root = Get Default Directory();   // folder containing this script (JMP sets it when the script is opened)
+out = root || "out/";
+Clear Log();
+showcase = {"H-03 HSD", "U-01 MS", "R-02 HSD"};
+
+// fit Time Series Forecast by series, save forecasts + report text; returns concatenated forecast table
+fitAndSave = Function( {tbl, nahead, tag},
+	{plat, n, i, txt, lvl, r, ft, tabs, all},
+	plat = tbl << Time Series Forecast(
+		Time( :date ),
+		Y( :demand_kL ),
+		By( :series ),
+		Fit Model( NAhead( nahead ), Period( 7 ), Other Options( Forecast Interval Level( 0.95 ) ) ),
+		Invisible
+	);
+	If( Type( plat ) != "List", plat = Eval List( {plat} ) );
+	n = N Items( plat );
+	txt = "";
+	tabs = {};
+	For( i = 1, i <= n, i++,
+		rep = plat[i] << Report;
+		lvl = rep[Outline Box( 1 )] << Get Title;
+		txt ||= "\!N### " || lvl || "\!N" || (rep << Get Text);
+		r = plat[i] << Save Results( Save Forecast Intervals( 1 ), NAhead( nahead ) );
+		ft = r[1];
+		ft << New Column( "by_group", Character, Set Each Value( lvl ) );
+		Insert Into( tabs, ft );
+		If( tag == "production",
+			For( k = 1, k <= N Items( showcase ), k++,
+				If( Contains( lvl, showcase[k] ),
+					Try( rep[Outline Box( "Series and Forecasts" )] << Save Picture(
+						out || "chart_" || Substitute( showcase[k], " ", "_" ) || ".png", "png" ) )
+				)
+			)
+		);
+	);
+	Save Text File( out || tag || "_models.txt", txt );
+	all = tabs[1] << Concatenate( tabs[2 :: N Items( tabs )], Output Table( tag || "_forecasts" ), Invisible );
+	all << Save( out || tag || "_forecasts.csv" );
+	For( i = 1, i <= N Items( tabs ), i++, Close( tabs[i], No Save ) );
+	If( tag == "production",
+		Try( plat[1] << Save Script for All Objects To Data Table( "DryOut Forecast Model (Time Series Forecast by series)" ) ) );
+	For( i = 1, i <= n, i++, Try( (plat[i] << Report) << Close Window ) );
+	all;
+);
+
+Try(
+	dt = Open( root || "model_input.csv", Invisible );
+	dt << Set Name( "DryOut_model_input" );
+	:demand_kL << Set Property( "Notes", "Daily demand (kL): sales, with dry-out days replaced by the same-weekday mean of the previous 4 normal weeks" );
+
+	// ---- Step 1: validation (fit on Train only) ----
+	train = dt << Subset( Rows( dt << Get Rows Where( :split == "Train" ) ), Output Table( "train" ), Invisible );
+	t0 = Tick Seconds();
+	val = fitAndSave( train, 56, "validation" );
+	Write( "\!Nvalidation done in " || Char( Round( Tick Seconds() - t0 ) ) || " s, rows=" || Char( N Rows( val ) ) );
+	Write( "\!Ncolumns: " || Concat Items( val << Get Column Names( String ), " | " ) );
+	Close( train, No Save );
+
+	// ---- Step 2: production (fit on all data) ----
+	t0 = Tick Seconds();
+	prod = fitAndSave( dt, 28, "production" );
+	Write( "\!Nproduction done in " || Char( Round( Tick Seconds() - t0 ) ) || " s, rows=" || Char( N Rows( prod ) ) );
+	dt << Save( root || "DryOut_model_input.jmp" );
+	Write( "\!NDONE" );
+,
+	Write( "\!NERROR: " || Char( exception_msg ) )
+);
+Save Text File( out || "run_log.txt", Concat Items( Get Log(), "\!N" ) );

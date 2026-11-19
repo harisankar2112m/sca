@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.DS_Store
+.venv/
+jmp/model_input.csv
+jmp/*.jmp
+!jmp/DryOut_model_input.jmp

@@ -1,0 +1,181 @@
+series,outlet_type,product,MAPE_%,RMSE_kL,MAE_kL,Bias_%,method,coverage_95_%
+H-01 HSD,Highway,HSD,12.546,1.363,1.135,-10.946,"JMP Time Series Forecast (ETS, AIC-selected)",96.429
+H-01 MS,Highway,MS,10.772,0.402,0.342,7.121,"JMP Time Series Forecast (ETS, AIC-selected)",100.0
+H-02 HSD,Highway,HSD,13.32,1.985,1.628,-13.774,"JMP Time Series Forecast (ETS, AIC-selected)",87.5
+H-02 MS,Highway,MS,9.853,0.338,0.273,4.662,"JMP Time Series Forecast (ETS, AIC-selected)",96.429
+H-03 HSD,Highway,HSD,10.665,2.029,1.626,-6.712,"JMP Time Series Forecast (ETS, AIC-selected)",98.214
+H-03 MS,Highway,MS,9.367,0.482,0.396,1.348,"JMP Time Series Forecast (ETS, AIC-selected)",98.214
+H-04 HSD,Highway,HSD,9.822,1.264,0.99,-7.104,"JMP Time Series Forecast (ETS, AIC-selected)",98.214
+H-04 MS,Highway,MS,5.561,0.398,0.296,-0.147,"JMP Time Series Forecast (ETS, AIC-selected)",92.857
+H-05 HSD,Highway,HSD,13.66,1.443,1.233,-12.179,"JMP Time Series Forecast (ETS, AIC-selected)",98.214
+H-05 MS,Highway,MS,7.511,0.326,0.258,0.037,"JMP Time Series Forecast (ETS, AIC-selected)",96.429
+H-06 HSD,Highway,HSD,11.644,1.716,1.453,-8.736,"JMP Time Series Forecast (ETS, AIC-selected)",96.429
+H-06 MS,Highway,MS,7.463,0.356,0.289,-1.175,"JMP Time Series Forecast (ETS, AIC-selected)",100.0
+H-07 HSD,Highway,HSD,9.474,1.732,1.311,-7.643,"JMP Time Series Forecast (ETS, AIC-selected)",92.857
+H-07 MS,Highway,MS,8.527,0.484,0.364,2.52,"JMP Time Series Forecast (ETS, AIC-selected)",89.286
+H-08 HSD,Highway,HSD,8.258,0.873,0.682,-3.421,"JMP Time Series Forecast (ETS, AIC-selected)",100.0
+H-08 MS,Highway,MS,8.471,0.373,0.317,-1.176,"JMP Time Series Forecast (ETS, AIC-selected)",100.0
+H-09 HSD,Highway,HSD,7.692,1.255,0.884,-4.932,"JMP Time Series Forecast (ETS, AIC-selected)",98.214
+H-09 MS,Highway,MS,7.978,0.367,0.293,4.79,"JMP Time Series Forecast (ETS, AIC-selected)",98.214
+H-10 HSD,Highway,HSD,10.692,1.998,1.571,-8.202,"JMP Time Series Forecast (ETS, AIC-selected)",98.214
+H-10 MS,Highway,MS,11.097,0.62,0.496,7.643,"JMP Time Series Forecast (ETS, AIC-selected)",94.643
+R-01 HSD,Rural,HSD,25.727,1.107,0.943,-27.523,"JMP Time Series Forecast (ETS, AIC-selected)",67.857
+R-01 MS,Rural,MS,11.078,0.368,0.288,-1.591,"JMP Time Series Forecast (ETS, AIC-selected)",96.429
+R-02 HSD,Rural,HSD,22.803,1.146,1.008,-22.058,"JMP Time Series Forecast (ETS, AIC-selected)",94.643
+R-02 MS,Rural,MS,9.009,0.178,0.134,1.907,"JMP Time Series Forecast (ETS, AIC-selected)",100.0
+R-03 HSD,Rural,HSD,15.999,1.067,0.736,-16.715,"JMP Time Series Forecast (ETS, AIC-selected)",96.429
+R-03 MS,Rural,MS,9.599,0.268,0.198,-4.781,"JMP Time Series Forecast (ETS, AIC-selected)",94.643
+R-04 HSD,Rural,HSD,12.34,1.086,0.737,-7.575,"JMP Time Series Forecast (ETS, AIC-selected)",91.071
+R-04 MS,Rural,MS,12.067,0.353,0.283,0.104,"JMP Time Series Forecast (ETS, AIC-selected)",98.214
+R-05 HSD,Rural,HSD,16.627,0.997,0.737,-16.909,"JMP Time Series Forecast (ETS, AIC-selected)",94.643
+R-05 MS,Rural,MS,10.216,0.168,0.142,1.029,"JMP Time Series Forecast (ETS, AIC-selected)",100.0
+R-06 HSD,Rural,HSD,21.221,1.417,1.135,-22.375,"JMP Time Series Forecast (ETS, AIC-selected)",92.857
+R-06 MS,Rural,MS,10.578,0.405,0.315,-6.91,"JMP Time Series Forecast (ETS, AIC-selected)",98.214
+R-07 HSD,Rural,HSD,14.545,0.701,0.503,-2.759,"JMP Time Series Forecast (ETS, AIC-selected)",96.429
+R-07 MS,Rural,MS,8.573,0.21,0.159,-0.063,"JMP Time Series Forecast (ETS, AIC-selected)",96.429
+R-08 HSD,Rural,HSD,12.586,1.018,0.693,-10.051,"JMP Time Series Forecast (ETS, AIC-selected)",83.929
+R-08 MS,Rural,MS,10.877,0.264,0.218,5.336,"JMP Time Series Forecast (ETS, AIC-selected)",98.214
+U-01 HSD,Urban,HSD,10.09,0.779,0.648,-9.04,"JMP Time Series Forecast (ETS, AIC-selected)",98.214
+U-01 MS,Urban,MS,6.807,0.623,0.517,-4.826,"JMP Time Series Forecast (ETS, AIC-selected)",100.0
+U-02 HSD,Urban,HSD,11.601,1.035,0.847,-11.684,"JMP Time Series Forecast (ETS, AIC-selected)",87.5
+U-02 MS,Urban,MS,5.679,0.4,0.326,-2.821,"JMP Time Series Forecast (ETS, AIC-selected)",100.0
+U-03 HSD,Urban,HSD,10.012,0.962,0.787,-9.462,"JMP Time Series Forecast (ETS, AIC-selected)",100.0
+U-03 MS,Urban,MS,6.296,0.64,0.511,-1.471,"JMP Time Series Forecast (ETS, AIC-selected)",100.0
+U-04 HSD,Urban,HSD,10.797,0.634,0.525,-9.817,"JMP Time Series Forecast (ETS, AIC-selected)",94.643
+U-04 MS,Urban,MS,5.776,0.389,0.311,3.664,"JMP Time Series Forecast (ETS, AIC-selected)",100.0
+U-05 HSD,Urban,HSD,8.759,0.526,0.418,-7.955,"JMP Time Series Forecast (ETS, AIC-selected)",98.214
+U-05 MS,Urban,MS,5.566,0.572,0.47,2.567,"JMP Time Series Forecast (ETS, AIC-selected)",100.0
+U-06 HSD,Urban,HSD,16.162,1.144,1.044,-16.599,"JMP Time Series Forecast (ETS, AIC-selected)",71.429
+U-06 MS,Urban,MS,5.865,0.63,0.479,-4.897,"JMP Time Series Forecast (ETS, AIC-selected)",96.429
+U-07 HSD,Urban,HSD,11.125,1.07,0.885,-10.897,"JMP Time Series Forecast (ETS, AIC-selected)",91.071
+U-07 MS,Urban,MS,5.474,0.665,0.516,-1.35,"JMP Time Series Forecast (ETS, AIC-selected)",98.214
+U-08 HSD,Urban,HSD,14.123,1.251,1.114,-14.453,"JMP Time Series Forecast (ETS, AIC-selected)",87.5
+U-08 MS,Urban,MS,6.365,0.494,0.414,0.086,"JMP Time Series Forecast (ETS, AIC-selected)",98.214
+U-09 HSD,Urban,HSD,11.174,0.967,0.772,-11.013,"JMP Time Series Forecast (ETS, AIC-selected)",87.5
+U-09 MS,Urban,MS,6.585,0.474,0.378,-2.714,"JMP Time Series Forecast (ETS, AIC-selected)",94.643
+U-10 HSD,Urban,HSD,9.977,0.89,0.705,-8.489,"JMP Time Series Forecast (ETS, AIC-selected)",92.857
+U-10 MS,Urban,MS,5.627,0.362,0.285,2.265,"JMP Time Series Forecast (ETS, AIC-selected)",100.0
+U-11 HSD,Urban,HSD,10.139,0.946,0.74,-10.242,"JMP Time Series Forecast (ETS, AIC-selected)",91.071
+U-11 MS,Urban,MS,5.774,0.567,0.441,-1.614,"JMP Time Series Forecast (ETS, AIC-selected)",100.0
+U-12 HSD,Urban,HSD,7.733,0.379,0.319,-6.323,"JMP Time Series Forecast (ETS, AIC-selected)",100.0
+U-12 MS,Urban,MS,6.499,0.502,0.419,3.477,"JMP Time Series Forecast (ETS, AIC-selected)",100.0
+H-01 HSD,Highway,HSD,13.839,1.438,1.228,-10.198,Benchmark: seasonal naive (same weekday last week),
+H-01 MS,Highway,MS,14.32,0.538,0.451,11.314,Benchmark: seasonal naive (same weekday last week),
+H-02 HSD,Highway,HSD,16.645,2.402,1.987,-15.164,Benchmark: seasonal naive (same weekday last week),
+H-02 MS,Highway,MS,11.712,0.416,0.331,3.781,Benchmark: seasonal naive (same weekday last week),
+H-03 HSD,Highway,HSD,10.065,2.081,1.532,-5.182,Benchmark: seasonal naive (same weekday last week),
+H-03 MS,Highway,MS,12.316,0.634,0.509,3.472,Benchmark: seasonal naive (same weekday last week),
+H-04 HSD,Highway,HSD,11.097,1.43,1.106,-6.686,Benchmark: seasonal naive (same weekday last week),
+H-04 MS,Highway,MS,6.538,0.425,0.349,-1.02,Benchmark: seasonal naive (same weekday last week),
+H-05 HSD,Highway,HSD,15.459,1.694,1.391,-13.048,Benchmark: seasonal naive (same weekday last week),
+H-05 MS,Highway,MS,10.436,0.445,0.367,-2.473,Benchmark: seasonal naive (same weekday last week),
+H-06 HSD,Highway,HSD,11.554,1.749,1.437,-7.804,Benchmark: seasonal naive (same weekday last week),
+H-06 MS,Highway,MS,9.779,0.46,0.376,-4.382,Benchmark: seasonal naive (same weekday last week),
+H-07 HSD,Highway,HSD,12.959,2.315,1.777,-8.672,Benchmark: seasonal naive (same weekday last week),
+H-07 MS,Highway,MS,9.66,0.555,0.411,2.66,Benchmark: seasonal naive (same weekday last week),
+H-08 HSD,Highway,HSD,11.58,1.141,0.932,-3.19,Benchmark: seasonal naive (same weekday last week),
+H-08 MS,Highway,MS,12.342,0.542,0.462,-1.829,Benchmark: seasonal naive (same weekday last week),
+H-09 HSD,Highway,HSD,9.371,1.384,1.064,-5.156,Benchmark: seasonal naive (same weekday last week),
+H-09 MS,Highway,MS,11.672,0.517,0.438,5.493,Benchmark: seasonal naive (same weekday last week),
+H-10 HSD,Highway,HSD,12.63,2.031,1.751,-3.892,Benchmark: seasonal naive (same weekday last week),
+H-10 MS,Highway,MS,14.018,0.774,0.638,9.362,Benchmark: seasonal naive (same weekday last week),
+R-01 HSD,Rural,HSD,26.817,1.159,0.974,-27.787,Benchmark: seasonal naive (same weekday last week),
+R-01 MS,Rural,MS,16.083,0.479,0.403,1.974,Benchmark: seasonal naive (same weekday last week),
+R-02 HSD,Rural,HSD,21.166,1.155,0.947,-20.654,Benchmark: seasonal naive (same weekday last week),
+R-02 MS,Rural,MS,12.816,0.22,0.188,4.654,Benchmark: seasonal naive (same weekday last week),
+R-03 HSD,Rural,HSD,17.534,1.125,0.785,-13.543,Benchmark: seasonal naive (same weekday last week),
+R-03 MS,Rural,MS,18.913,0.461,0.374,-11.472,Benchmark: seasonal naive (same weekday last week),
+R-04 HSD,Rural,HSD,14.582,1.187,0.862,-8.756,Benchmark: seasonal naive (same weekday last week),
+R-04 MS,Rural,MS,12.741,0.404,0.304,-0.553,Benchmark: seasonal naive (same weekday last week),
+R-05 HSD,Rural,HSD,18.364,1.048,0.791,-17.205,Benchmark: seasonal naive (same weekday last week),
+R-05 MS,Rural,MS,14.143,0.238,0.199,1.126,Benchmark: seasonal naive (same weekday last week),
+R-06 HSD,Rural,HSD,23.628,1.534,1.244,-23.867,Benchmark: seasonal naive (same weekday last week),
+R-06 MS,Rural,MS,12.947,0.463,0.38,-8.446,Benchmark: seasonal naive (same weekday last week),
+R-07 HSD,Rural,HSD,17.793,0.826,0.621,-6.019,Benchmark: seasonal naive (same weekday last week),
+R-07 MS,Rural,MS,11.637,0.266,0.215,1.596,Benchmark: seasonal naive (same weekday last week),
+R-08 HSD,Rural,HSD,13.644,1.033,0.733,-10.523,Benchmark: seasonal naive (same weekday last week),
+R-08 MS,Rural,MS,20.006,0.479,0.406,11.848,Benchmark: seasonal naive (same weekday last week),
+U-01 HSD,Urban,HSD,12.207,0.942,0.782,-10.345,Benchmark: seasonal naive (same weekday last week),
+U-01 MS,Urban,MS,7.864,0.756,0.604,-6.406,Benchmark: seasonal naive (same weekday last week),
+U-02 HSD,Urban,HSD,11.33,1.048,0.829,-11.164,Benchmark: seasonal naive (same weekday last week),
+U-02 MS,Urban,MS,7.883,0.54,0.44,-2.422,Benchmark: seasonal naive (same weekday last week),
+U-03 HSD,Urban,HSD,9.332,0.894,0.722,-7.037,Benchmark: seasonal naive (same weekday last week),
+U-03 MS,Urban,MS,8.097,0.792,0.66,-2.266,Benchmark: seasonal naive (same weekday last week),
+U-04 HSD,Urban,HSD,11.071,0.657,0.529,-8.291,Benchmark: seasonal naive (same weekday last week),
+U-04 MS,Urban,MS,10.239,0.662,0.553,7.66,Benchmark: seasonal naive (same weekday last week),
+U-05 HSD,Urban,HSD,9.632,0.595,0.46,-8.49,Benchmark: seasonal naive (same weekday last week),
+U-05 MS,Urban,MS,5.786,0.678,0.509,3.45,Benchmark: seasonal naive (same weekday last week),
+U-06 HSD,Urban,HSD,16.742,1.175,1.076,-17.118,Benchmark: seasonal naive (same weekday last week),
+U-06 MS,Urban,MS,7.832,0.805,0.628,-4.877,Benchmark: seasonal naive (same weekday last week),
+U-07 HSD,Urban,HSD,11.018,1.039,0.867,-10.459,Benchmark: seasonal naive (same weekday last week),
+U-07 MS,Urban,MS,6.372,0.742,0.605,-1.997,Benchmark: seasonal naive (same weekday last week),
+U-08 HSD,Urban,HSD,17.218,1.518,1.344,-17.338,Benchmark: seasonal naive (same weekday last week),
+U-08 MS,Urban,MS,7.72,0.602,0.504,0.18,Benchmark: seasonal naive (same weekday last week),
+U-09 HSD,Urban,HSD,10.869,0.96,0.748,-10.663,Benchmark: seasonal naive (same weekday last week),
+U-09 MS,Urban,MS,8.173,0.63,0.464,-1.74,Benchmark: seasonal naive (same weekday last week),
+U-10 HSD,Urban,HSD,10.258,0.899,0.723,-9.064,Benchmark: seasonal naive (same weekday last week),
+U-10 MS,Urban,MS,6.905,0.466,0.354,3.507,Benchmark: seasonal naive (same weekday last week),
+U-11 HSD,Urban,HSD,12.01,1.042,0.859,-9.73,Benchmark: seasonal naive (same weekday last week),
+U-11 MS,Urban,MS,6.561,0.617,0.493,-0.187,Benchmark: seasonal naive (same weekday last week),
+U-12 HSD,Urban,HSD,9.13,0.48,0.375,-7.329,Benchmark: seasonal naive (same weekday last week),
+U-12 MS,Urban,MS,9.733,0.769,0.64,5.291,Benchmark: seasonal naive (same weekday last week),
+H-01 HSD,Highway,HSD,12.872,1.417,1.175,-12.294,Benchmark: 28-day moving average,
+H-01 MS,Highway,MS,10.149,0.377,0.323,5.324,Benchmark: 28-day moving average,
+H-02 HSD,Highway,HSD,10.257,1.571,1.247,-8.647,Benchmark: 28-day moving average,
+H-02 MS,Highway,MS,10.667,0.367,0.296,4.294,Benchmark: 28-day moving average,
+H-03 HSD,Highway,HSD,14.137,2.646,2.194,-12.595,Benchmark: 28-day moving average,
+H-03 MS,Highway,MS,10.268,0.504,0.433,1.213,Benchmark: 28-day moving average,
+H-04 HSD,Highway,HSD,9.969,1.34,1.014,-8.129,Benchmark: 28-day moving average,
+H-04 MS,Highway,MS,6.729,0.442,0.351,0.25,Benchmark: 28-day moving average,
+H-05 HSD,Highway,HSD,14.013,1.453,1.256,-11.503,Benchmark: 28-day moving average,
+H-05 MS,Highway,MS,8.028,0.361,0.272,1.209,Benchmark: 28-day moving average,
+H-06 HSD,Highway,HSD,14.067,2.073,1.781,-12.591,Benchmark: 28-day moving average,
+H-06 MS,Highway,MS,8.892,0.416,0.342,-0.196,Benchmark: 28-day moving average,
+H-07 HSD,Highway,HSD,10.506,1.832,1.421,-6.92,Benchmark: 28-day moving average,
+H-07 MS,Highway,MS,9.537,0.519,0.408,3.372,Benchmark: 28-day moving average,
+H-08 HSD,Highway,HSD,10.747,1.158,0.92,-9.381,Benchmark: 28-day moving average,
+H-08 MS,Highway,MS,9.165,0.417,0.336,0.619,Benchmark: 28-day moving average,
+H-09 HSD,Highway,HSD,8.59,1.307,0.958,-3.733,Benchmark: 28-day moving average,
+H-09 MS,Highway,MS,8.917,0.395,0.328,4.588,Benchmark: 28-day moving average,
+H-10 HSD,Highway,HSD,12.107,2.219,1.773,-9.47,Benchmark: 28-day moving average,
+H-10 MS,Highway,MS,9.916,0.555,0.449,4.867,Benchmark: 28-day moving average,
+R-01 HSD,Rural,HSD,21.252,0.967,0.791,-22.247,Benchmark: 28-day moving average,
+R-01 MS,Rural,MS,12.495,0.42,0.323,-0.959,Benchmark: 28-day moving average,
+R-02 HSD,Rural,HSD,18.89,1.057,0.854,-18.569,Benchmark: 28-day moving average,
+R-02 MS,Rural,MS,10.326,0.2,0.157,-0.141,Benchmark: 28-day moving average,
+R-03 HSD,Rural,HSD,14.966,1.037,0.68,-10.78,Benchmark: 28-day moving average,
+R-03 MS,Rural,MS,11.58,0.281,0.227,0.73,Benchmark: 28-day moving average,
+R-04 HSD,Rural,HSD,13.142,1.206,0.8,-9.331,Benchmark: 28-day moving average,
+R-04 MS,Rural,MS,13.43,0.397,0.311,2.092,Benchmark: 28-day moving average,
+R-05 HSD,Rural,HSD,15.386,0.856,0.657,-9.509,Benchmark: 28-day moving average,
+R-05 MS,Rural,MS,11.269,0.214,0.162,-1.43,Benchmark: 28-day moving average,
+R-06 HSD,Rural,HSD,19.543,1.372,1.059,-19.907,Benchmark: 28-day moving average,
+R-06 MS,Rural,MS,11.508,0.417,0.337,-4.292,Benchmark: 28-day moving average,
+R-07 HSD,Rural,HSD,16.122,0.837,0.604,-12.096,Benchmark: 28-day moving average,
+R-07 MS,Rural,MS,10.046,0.264,0.194,-2.565,Benchmark: 28-day moving average,
+R-08 HSD,Rural,HSD,14.285,1.113,0.794,-13.511,Benchmark: 28-day moving average,
+R-08 MS,Rural,MS,12.787,0.303,0.258,5.898,Benchmark: 28-day moving average,
+U-01 HSD,Urban,HSD,13.699,1.033,0.886,-13.701,Benchmark: 28-day moving average,
+U-01 MS,Urban,MS,6.117,0.55,0.45,-0.42,Benchmark: 28-day moving average,
+U-02 HSD,Urban,HSD,11.829,1.101,0.874,-12.274,Benchmark: 28-day moving average,
+U-02 MS,Urban,MS,6.0,0.432,0.342,-2.313,Benchmark: 28-day moving average,
+U-03 HSD,Urban,HSD,11.927,1.078,0.929,-11.008,Benchmark: 28-day moving average,
+U-03 MS,Urban,MS,7.426,0.715,0.581,2.328,Benchmark: 28-day moving average,
+U-04 HSD,Urban,HSD,11.441,0.655,0.553,-9.621,Benchmark: 28-day moving average,
+U-04 MS,Urban,MS,5.739,0.392,0.318,-0.778,Benchmark: 28-day moving average,
+U-05 HSD,Urban,HSD,10.929,0.639,0.523,-10.734,Benchmark: 28-day moving average,
+U-05 MS,Urban,MS,7.0,0.711,0.607,0.096,Benchmark: 28-day moving average,
+U-06 HSD,Urban,HSD,13.938,1.003,0.904,-13.749,Benchmark: 28-day moving average,
+U-06 MS,Urban,MS,6.765,0.67,0.54,-2.63,Benchmark: 28-day moving average,
+U-07 HSD,Urban,HSD,10.85,1.05,0.859,-9.323,Benchmark: 28-day moving average,
+U-07 MS,Urban,MS,6.124,0.728,0.565,0.575,Benchmark: 28-day moving average,
+U-08 HSD,Urban,HSD,11.562,1.075,0.921,-11.136,Benchmark: 28-day moving average,
+U-08 MS,Urban,MS,6.866,0.544,0.443,0.474,Benchmark: 28-day moving average,
+U-09 HSD,Urban,HSD,9.965,0.887,0.691,-8.467,Benchmark: 28-day moving average,
+U-09 MS,Urban,MS,6.761,0.501,0.382,-0.895,Benchmark: 28-day moving average,
+U-10 HSD,Urban,HSD,10.567,0.949,0.753,-9.634,Benchmark: 28-day moving average,
+U-10 MS,Urban,MS,6.617,0.414,0.343,0.428,Benchmark: 28-day moving average,
+U-11 HSD,Urban,HSD,10.875,0.983,0.788,-10.054,Benchmark: 28-day moving average,
+U-11 MS,Urban,MS,6.783,0.659,0.522,-2.902,Benchmark: 28-day moving average,
+U-12 HSD,Urban,HSD,9.475,0.464,0.394,-8.909,Benchmark: 28-day moving average,
+U-12 MS,Urban,MS,5.524,0.44,0.357,1.153,Benchmark: 28-day moving average,

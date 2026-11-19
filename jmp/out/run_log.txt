@@ -1,0 +1,5 @@
+/*:
+validation done in 50 s, rows=3360
+columns: date | demand_kL | demand_kL (Lower 95%) | demand_kL (Upper 95%) | by_group
+production done in 52 s, rows=1680
+DONE
