@@ -4,6 +4,9 @@ SCA group project · GIM PGDM-BDA 2026-27, Term 5 · Sector: **Fuel**
 
 Team: Sakshi Malwanker (B2025159), Harisankar M (B2025139), George K Manuel (B2025138), Aswin R Nair (B2025129)
 
+**Live app:** https://harisankar2112m-sca-appstreamlit-app-zk5y0h.streamlit.app/  
+**Source code:** https://github.com/harisankar2112m/sca
+
 **DryOut Shield** is a decision-support web app for an oil-company depot manager. It:
 - forecasts each outlet's daily petrol and diesel demand using a model built and validated in **JMP**;
 - converts the forecast, its uncertainty and current stock into days of cover, dry-out risk, reorder points and order quantities in 4 kL compartments;
