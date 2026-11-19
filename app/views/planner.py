@@ -59,6 +59,10 @@ cols = ["priority", "outlet_id", "outlet_type", "product", "status", "current_st
 st.dataframe(style_status(view[cols]), hide_index=True, width="stretch", height=420,
              column_config={
                  "priority": st.column_config.NumberColumn("Priority", format="%d"),
+                 "outlet_id": "Outlet", "outlet_type": "Type", "product": "Product", "status": "Status",
+                 "current_stock_kL": "Stock (kL)", "capacity_kL": "Capacity (kL)", "transit_days": "Transit (days)",
+                 "reorder_point_kL": "Reorder point (kL)", "safety_stock_kL": "Safety stock (kL)",
+                 "trips": "Trips", "decision": "Decision", "arrival_date": "Arrives",
                  "days_of_cover": st.column_config.NumberColumn("Days of cover", format="%.1f"),
                  "dryout_prob_if_no_order": st.column_config.ProgressColumn("Dry-out risk if no truck", min_value=0, max_value=1, format="percent"),
                  "order_kL": st.column_config.NumberColumn("Order (kL)", format="%.0f"),

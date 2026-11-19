@@ -30,4 +30,5 @@ def style_status(df, col="status"):
     def f(v):
         c = STATUS_COLORS.get(v)
         return f"background-color: {c}; color: white; font-weight: 600" if c else ""
-    return df.style.map(f, subset=[col])
+    num = [c for c in df.select_dtypes("float").columns if c.endswith("_kL")]
+    return df.style.map(f, subset=[col]).format("{:.1f}", subset=num, na_rep="")
